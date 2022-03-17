@@ -4,17 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Movie Genie</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/CSS/style.css" />
   
 </head>
 <body>
-    <header></header>
+
+    <!--Header-->
+    <header class="h-28 w-full bg-purple-900"><h1>Presenting: The Movie Genie</h1></header>
+
+    <!--Movie Search Box-->
+    <div id="search-box">
+        <form>
+            <label for="movieSearch" class="text-black">Search your favorite Movies here!</label>
+            <input id="movieSearch" name="Movie" value="Movie"></input>
+            <button id="searchBtn" class="bg-purple-900 text-black rounded-lg" type="submit"></button>
+        </form>
+    </div>
+
+   <!--Main Synopsis-->
+    <main id="synopsis"><span id="synInfo"></span></main>
+
+   <!--Section for Movie Quotes, links and ratings-->
+    <section id="movieInfo">
+
+        <div id="movieQuotes" class="going-to-movies"></div>
+
+        <div id="movieLinks" class="going-to-movies"></div>
+
+        <div id="movieRatings" class="going-to-movies"></div>
+
+    </section>
+
+    <!--Footer-->
+    <Footer class="h-28 w-full bg-purple-900"></Footer>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <!--touch punch-->
