@@ -6,22 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Movie Genie</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/components.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/utilities.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
     <link rel="stylesheet" href="./assets/CSS/style.css" />
 </head>
 <body>
 
     <!--Header-->
-    <header class="h-28 w-full bg-purple-900"><h1>Presenting: The Movie Genie</h1></header>
+    <header><h1>Presenting: The Movie Genie</h1></header>
 
     <!--Movie Search Box-->
-    <div id="search-box" class="flex-col">
+    <div id="search-box">
         <form>
-            <label for="movie-search" class="text-black">Search your favorite Movies here!</label>
-            <input id="movie-search" class="border-solid border-black" name="Movie" value="Movie"></input>
+            <label for="movie-search" >Search your favorite Movies here!</label>
+            <input id="movie-search" name="Movie" value="Movie"></input>
             <button id="search-button" class="bg-fushia-900 text-black rounded-lg h-10 w-32" type="submit">Search</button>
         </form>
     </div>
@@ -59,7 +56,7 @@
     </section>
 
     <!--Footer-->
-    <Footer class="h-28 w-full bg-purple-900"></Footer>
+    <Footer></Footer>
 
     <!--Script containing JQuery, Moment, Touch Punch, etc-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -67,8 +64,6 @@
   <!--touch punch-->
   <script src="https://cdn.jsdelivr.net/npm/jquery-ui-touch-punch@0.2.3/jquery.ui.touch-punch.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
-  <!--bootstrap-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <!--moment.js-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <!--Tailwind-->
