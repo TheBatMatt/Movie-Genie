@@ -13,10 +13,9 @@ body {
     background-size: contain;
 }
 
-header h1{
-    text-align: center;
-    height: 100px;
-    width: 100%;
+header h1 {
+    font-size: 50px;
+    margin-top: 25px;
 }
 
 #movie-search {
