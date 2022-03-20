@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
+=======
+    <script src="https://cdn.tailwindcss.com"></script>
+>>>>>>> develop
     <title>The Movie Genie</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
@@ -12,6 +16,7 @@
 <body>
 
     <!--Header-->
+<<<<<<< HEAD
     <header><h1>Presenting: The Movie Genie</h1></header>
 
     <!--Movie Search Box-->
@@ -54,6 +59,30 @@
         </div>
 
     </section>
+=======
+    <header class="bg-gradient-to-r from-violet-500 to-fuchsia-500 h-28 w-full"><h1 class="font-bold">Presenting: The Movie Genie</h1></header>
+
+    <!--Movie Search Box-->
+    <div id="search-box" class="bg-violet-900 border-solid border-2 border-black flex-wrap items-center">
+        <form class="flex-row items-center">
+        <label for="movie-search"><h2 class="text-white">Search your favorite Movies here!</h2></label>
+            <input id="movie-search" class="text-center" name="Movie" value="Movie"></input>
+            <button id="search-button" class="bg-purple-900 h-10 w-16" type="submit">Search</button>
+        </form>
+    </div>
+
+   <!--Main Synopsis/Rating-->
+   <div id="user-ratings"></div> 
+   <div class="reviews"></div>
+    
+   <main id="synopsis" class="bg-purple-900 text-white text-center">
+       <h2>Synopsis</h2>
+
+      <div id="movie-poster"></div>
+      <span id="syn-info"></span>
+    
+   </main>
+>>>>>>> develop
 
     <!--Footer-->
     <Footer></Footer>
@@ -61,6 +90,7 @@
     <!--Script containing JQuery, Moment, Touch Punch, etc-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<<<<<<< HEAD
   <!--touch punch-->
   <script src="https://cdn.jsdelivr.net/npm/jquery-ui-touch-punch@0.2.3/jquery.ui.touch-punch.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
@@ -69,5 +99,12 @@
   <!--Tailwind-->
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="./assets/JS/script.js"></script>
+=======
+  <!--moment.js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <!--Tailwind-->
+  <script src="./assets/JS/script.js"></script>
+
+>>>>>>> develop
 </body>
 </html>
