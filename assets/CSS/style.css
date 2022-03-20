@@ -10,22 +10,51 @@ body {
     background-image: url(../Images/459817.webp);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 header h1{
     text-align: center;
+    height: 100px;
+    width: 100%;
 }
 
 #search-box {
     display: flex;
-    margin: 10px 0 20px 600px;
-    height: 100px;
-    width: 300px;
+    margin: 20px 0 20px 600px;
+    height: 60px;
+    width: 250px;
+}
+
+#reviews-ratings {
+    display: flex;
+    margin-left: 600px;
+}
+
+#user-ratings {
+    height: 50px;
+    width: 150px;
+    background-color: blueviolet;
+}
+
+.reviews {
+    height: 50px;
+    width: 150px;
+    background-color: blueviolet;
 }
 
 #synopsis {
-    height: 200px;
+    height: 400px;
     width: 1000px;
     margin-left: 250px;
     margin-bottom: 200px;
+    margin-top: 25px;
+}
+
+#movie-poster {
+    background-color: dimgrey;
+    height: 300px;
+    width: 250px;
+    margin-left: 20px;
+    margin-top: 20px;
 }

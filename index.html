@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--Tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>The Movie Genie</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
@@ -12,21 +14,27 @@
 <body>
 
     <!--Header-->
-    <header>
-        <h1>Presenting: The Movie Genie</h1>
-    </header>
+    <header class="bg-violet-900 border-4 border-black border-solid"><h1>Presenting: The Movie Genie</h1></header>
 
     <!--Movie Search Box-->
-    <div id="search-box">
-        <form>
+    <div id="search-box" class="bg-purple-900">
+        <form id="search-form">
             <label for="movie-search" >Search your favorite Movies here!</label>
             <input id="movie-search" name="Movie" value="Movie"></input>
-            <button id="search-button" class="bg-fushia-900 text-black rounded-lg h-10 w-30" type="submit">Search</button>
+            <button id="search-button" type="submit">Search</button>
         </form>
     </div>
 
-   <!--Main Synopsis-->
-    <main id="synopsis"><span id="syn-info"></span></main>
+    <!--Main Synopsis/Rating-->
+    <div id="reviews-ratings">
+        <div id="user-ratings" class="text-white border-2 border-black border-solid text-center">User Rating</div>
+        <div class="reviews text-white border-2 border-black border-solid text-center">Reviews</div>
+    </div>
+    <main id="synopsis" class="bg-purple-900 border-4 border-black border-solid">
+        <h2 class="text-white font-bold text-center">Synopsis</h2>
+        <div id="movie-poster"></div>
+        <span id="syn-info"></span>
+    </main>
 
    <!--Section for Movie Quotes, links and ratings-->
     <section id="movie-info">
@@ -63,12 +71,10 @@
     <!--Script containing JQuery, Moment, Touch Punch, etc-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <!--touch punch-->
-  <script src="https://cdn.jsdelivr.net/npm/jquery-ui-touch-punch@0.2.3/jquery.ui.touch-punch.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
   <!--moment.js-->
-  <!--Tailwind-->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="./assets/JS/script.js"></script>
+  
 </body>
 </html>
