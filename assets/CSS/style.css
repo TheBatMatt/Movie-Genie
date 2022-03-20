@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: black;
+    background-image: url(../Images/459817.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header h1{
+    text-align: center;
+}
+
+#search-box {
+    display: flex;
+    margin: 10px 0 20px 600px;
+    height: 100px;
+    width: 300px;
+}
+
+#synopsis {
+    height: 200px;
+    width: 1000px;
+    margin-left: 250px;
+    margin-bottom: 200px;
+}
