@@ -19,9 +19,13 @@ header h1{
     width: 100%;
 }
 
+#movie-search {
+    margin-left: 5px;
+}
+
 #search-box {
     display: flex;
-    margin: 20px 0 20px 600px;
+    margin: 20px 0 20px 620px;
     height: 60px;
     width: 250px;
 }
