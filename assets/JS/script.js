@@ -1,6 +1,14 @@
 var apiKey = "k_wgnnz7cy";
 var movieFormEl = document.querySelector("#search-form");
 var moveInputEl = document.querySelector("#movie-search");
+var htmlCode = "";
+
+// Function get movie searched and fetch the search api on submit
+var formSubmitHandler = function(event) {
+    event.preventDefault();
+    var movie = moveInputEl.value.trim();
+    searchMovie(movie);
+}
 
 // api fetch to get title, image and id
 var searchMovie = function(movie) {
@@ -10,7 +18,22 @@ var searchMovie = function(movie) {
         response.json().then(function(data) {
             console.log(data);
             // Calling the getReviews function using the id recieved from the search api
-            getReviews(data.results[0].id);
+
+            var htmlCode = `<div class="card mb-3" style="max-width: 540px;">
+                <div class="row col-md-12">
+                  <div class="col-md-4">
+                  </div>
+                  <div class="col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title">${[0].resultType}</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>`
+              console.log("html code");
+              document.getElementById ("synopsis").innerHTML = htmlCode;
+              console.log ("Push html code");
+             // getReviews(data.results[0].id);
         })
     })
 }
@@ -24,13 +47,6 @@ var getReviews = function(id) {
             console.log(data);
         })
     })
-}
-
-// Function get movie searched and fetch the search api on submit
-var formSubmitHandler = function(event) {
-    event.preventDefault();
-    var movie = moveInputEl.value.trim();
-    searchMovie(movie);
 }
 
 // Event listner for submitting the search
