@@ -25,7 +25,9 @@ var searchMovie = function(movie) {
                   </div>
                   <div class="col-md-12">
                     <div class="card-body">
-                      <h5 class="card-title">${[0].resultType}</h5>
+                      <h5 class="card-title">${data.results[0].title}</h5>
+                      <div class="estdate">${data.results[0].description}</div>
+                      <img src="${data.results[0].image}" width=500px>
                     </div>
                   </div>
                 </div>
@@ -33,7 +35,7 @@ var searchMovie = function(movie) {
               console.log("html code");
               document.getElementById ("synopsis").innerHTML = htmlCode;
               console.log ("Push html code");
-             // getReviews(data.results[0].id);
+              getReviews(data.results[0].id);
         })
     })
 }
@@ -43,8 +45,8 @@ var getReviews = function(id) {
     apiUrl = "https://imdb-api.com/en/API/Reviews/" + apiKey + "/" + id;
 
     fetch(apiUrl).then(function(response) {
-        response.json().then(function(data) {
-            console.log(data);
+        response.json().then(function(reviews) {
+            console.log(reviews);
         })
     })
 }
