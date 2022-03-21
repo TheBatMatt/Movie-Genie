@@ -17,24 +17,18 @@ var searchMovie = function(movie) {
     fetch(apiUrl).then(function(response) {
         response.json().then(function(data) {
             console.log(data);
-            // Calling the getReviews function using the id recieved from the search api
-
-            var htmlCode = `<div class="card mb-3" style="max-width: 540px;">
-                <div class="row col-md-12">
-                  <div class="col-md-4">
-                  </div>
-                  <div class="col-md-12">
-                    <div class="card-body">
-                      <h5 class="card-title">${data.results[0].title}</h5>
+            
+            // variable to add html code dynamically with API results
+            var htmlCode = `
+                      <h5 class="movietitle">${data.results[0].title}</h5>
                       <div class="estdate">${data.results[0].description}</div>
                       <img src="${data.results[0].image}" width=500px>
-                    </div>
-                  </div>
-                </div>
-              </div>`
-              console.log("html code");
-              document.getElementById ("synopsis").innerHTML = htmlCode;
-              console.log ("Push html code");
+                   `
+
+            // Adding html code to html index.
+              document.getElementById ("movie-poster").innerHTML = htmlCode;
+
+              // Calling the getReviews function using the id recieved from the search api
               getReviews(data.results[0].id);
         })
     })
@@ -47,6 +41,8 @@ var getReviews = function(id) {
     fetch(apiUrl).then(function(response) {
         response.json().then(function(reviews) {
             console.log(reviews);
+
+            
         })
     })
 }
