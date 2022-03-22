@@ -1,4 +1,5 @@
-var apiKey = "k_wgnnz7cy";
+//var apiKey = "k_wgnnz7cy";
+var apiKey = "k_92eskhkc";
 var movieFormEl = document.querySelector("#search-form");
 var moveInputEl = document.querySelector("#movie-search");
 var htmlCode = "";
@@ -68,7 +69,7 @@ var getReviews = function (id) {
             // Loop to append 4 reviews to the reviews div
             for (i = 0; i < 3; i++)
              {
-                $("#movie-ratings").append('<p class="ratings" <span class="font-weight-bolder>' + data.items[i].rate + '/10 ' + '</span> ' + data.items[i].content + '</p>');
+                $("#movie-ratings").append('<p class="ratings">' + data.items[i].rate + ' /10 ' + data.items[i].content + '</p>');
             }
         })
     })
