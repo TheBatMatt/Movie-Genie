@@ -52,8 +52,6 @@ var getPlot = function (movie) {
 
     fetch(apiUrl).then(function (response) {
         response.json().then(function (data) {
-            console.log(data);
-            console.log("plot fetch");
             document.getElementById("syn-info").innerText = data.Plot;
         })
     })
@@ -66,6 +64,12 @@ var getReviews = function (id) {
     fetch(apiUrl).then(function (response) {
         response.json().then(function (data) {
             console.log(data);
+
+            // Loop to append 4 reviews to the reviews div
+            for (i = 0; i < 3; i++)
+             {
+                $("#movie-ratings").append('<p class="ratings" <span class="font-weight-bolder>' + data.items[i].rate + '/10 ' + '</span> ' + data.items[i].content + '</p>');
+            }
         })
     })
 }
@@ -87,10 +91,8 @@ var historySearch = function () {
 //event listener to take back to previous search.
 previousMovieEl.addEventListener("click", previousSelection)
 var previousSelection = function (event) {
-    console.log("event")
     if (event.target.matches(".previous-movie")) {
         var movie = event.target.getAttribute("name")
-        console.log("onclick", event.target.getAttribute("name"))
         searchMovie(movie)
     }
 }
@@ -99,3 +101,6 @@ var previousSelection = function (event) {
 // Event listner for submitting the search
 movieFormEl.addEventListener("submit", formSubmitHandler);
 historySearch();
+
+
+
