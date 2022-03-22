@@ -30,6 +30,19 @@ var searchMovie = function(movie) {
 
               // Calling the getReviews function using the id recieved from the search api
               getReviews(data.results[0].id);
+              getPlot();
+        })
+    })
+
+}
+
+var getPlot = function(movie) {
+    apiUrl = "http://www.omdbapi.com/?t="+movie+"&apikey=c83d4e4e"
+
+    fetch(apiUrl).then(function(response) {
+        response.json().then(function(data) {
+            console.log(data);
+            console.log("plot fetch");
         })
     })
 }
@@ -39,10 +52,8 @@ var getReviews = function(id) {
     apiUrl = "https://imdb-api.com/en/API/Reviews/" + apiKey + "/" + id;
 
     fetch(apiUrl).then(function(response) {
-        response.json().then(function(reviews) {
-            console.log(reviews);
-
-            
+        response.json().then(function(data) {
+            console.log(data);
         })
     })
 }
