@@ -1,6 +1,125 @@
-.ratings {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Impact, fantasy;
+}
+
+body {
+    background-color: black;
+    background-image: url(../Images/459817.webp);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+header{
+    background-color:#683C9D;;
+}
+header h1 {
+    font-size: 100px;
+    margin-top: 25px;
+}
+
+#movie-search {
+    margin-left: 5px;
+}
+
+#search-box {
+    display: flex;
+    font-size: larger;
+    flex-direction: column;
+    position: relative;
+    margin: 20px 0 20px 60px;
+    height: 625px;
+    width: 450px;
+    top: 100px;
+}
+
+#movie-search {
+    background-color: whitesmoke;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+#search-button {
+    width: 190px;
+    margin-left: 30px;
+    position: static;
+}
+
+#movie-stuff {
+    margin-left: 200px;
+    position: relative;
+    bottom: 625px;   
+}
+
+#reviews-ratings {
+    display: flex;
+    margin-left: 950px;
+}
+
+#user-ratings {
+    height: 100px;
+    width: 250px;
+    background-color: blueviolet;
+}
+
+#reviews {
+    height: 100px;
+    width: 250px;
+    background-color: blueviolet;
+}
+
+#synopsis {
+    height: 600px;
+    width: 1500px;
+    margin-left: 450px;
+    margin-bottom: 200px;
+    margin-top: 25px;
+}
+
+#movie-poster {
+height: 500px;
+    width: 450px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#movie-info{
+   display: flex;
+   justify-content:space-evenly;
+   position: relative;
+   top: 100px;
+   bottom: 200px;
+   
+}
+
+.going-to-movies{
+    background-color: blueviolet;
+    height: 650px;
+    width: 550px;
+    margin-bottom: 550px;
+}
+
+#movie-search{
+    font-family: "Gill Sans", sans-serif;
+    text-align: center;
+    background-image: url("../Images/Neon\ Movie.jpg");
+}                  
+
+#img{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+#movie-reel{
+    float: right;
+}
+
+#neon-movie{
+    position: relative;
+    padding-bottom: -400px;
+
 }

@@ -4,36 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/CSS/style.css">
+      <!--Tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>The Movie Genie</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
-    <link rel="stylesheet" href="./assets/CSS/style.css" />-->
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
 </head>
 <body>
 
     <!--Header-->
-    <header><h1>Presenting: The Movie Genie</h1></header>
+    <header class=" border-4 border-black border-solid text-xl text-center h-60 w-full"> <h1>The Movie Genie 
+    </h1> 
+    <img id= "movie-reel" src="../assets/CSS/Background image.jpeg"> <img src="../assets/CSS/Background image.jpeg">
+</header>
 
     <!--Movie Search Box-->
-    <div id="search-box">
+    <div id="search-box" class="bg-purple-900 border-2 border-white border-solid">
         <form id="search-form">
-            <label for="movie-search" >Search your favorite Movies here!</label>
+            <label for="movie-search" class="text-center">Search your favorite Movies here!</label>
             <input id="movie-search" name="Movie" value="Movie"></input>
-            <button id="search-button" type="submit">Search</button>
+            <button id="search-button" class= "bg-violet-900 border-2 border-black border-solid" type="submit">Search</button>
         </form>
     </div>
 
-   <!--Main Synopsis/Rating-->
-   <div id="user-ratings"></div><div class="reviews"></div>
-    <main id="synopsis" class="synopsis">
-
-      <div id="movie-poster"></div>
-      <span id="syn-info"></span>
-    
+    <!--Main Synopsis/Rating-->
+    <main id="movie-stuff">
+      <div id="reviews-ratings">
+          <div id="user-ratings" class="text-white border-2 border-black border-solid text-center">User Rating</div>
+          <div id= "reviews" class="text-white border-2 border-black border-solid text-center">Reviews</div>
+      </div>
+      <div id="synopsis" class="bg-purple-900 border-4 border-black border-solid">
+          <h2 class="text-white font-bold text-center">Synopsis</h2>
+          <div id="movie-poster" class="border-2 border-black border-solid"> </div>
+          <!--<img id="neon-movie" src="../175128468-glowing-neon-line-movie-clapper-icon-isolated-on-black-background-film-clapper-board-clapperboard-si.webp" alt="Neon Movie">-->
+          <span id="syn-info"></span>
+      </div>
     </main>
 
-   <!--Section for Movie Quotes, links and ratings-->
+   <!--Section for Movie Quotes, links hshdsk and ratings-->
     <section id="movie-info">
 
         <!--Just need Quotes for MVP!!!!-->
@@ -59,24 +68,18 @@
             <span class="links"></span>
         </div>
 
-        <!--After MVP-->
-        <div id="movie-ratings" class="going-to-movies">
-            <!--Generate Ratings Here-->
-            <span class="ratings"></span>
-            <span class="ratings"></span>
-            <span class="ratings"></span>
-        </div>
-
     </section>
 
     <!--Footer-->
-    <Footer></Footer>
+    <footer class="bg-violet-900 border-4 border-black border-solid text-xl text-center h-60 w-full">
+        <img src="../assets/CSS/movie_background.jpeg" alt="movie_image.png">
+        
+    </footer>
+
 
     <!--Script containing JQuery, Moment, Touch Punch, etc-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <!--touch punch-->
-  <script src="https://cdn.jsdelivr.net/npm/jquery-ui-touch-punch@0.2.3/jquery.ui.touch-punch.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
   <!--moment.js-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
