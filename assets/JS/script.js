@@ -48,7 +48,7 @@ var searchMovie = function (movie) {
 }
 
 //API fetch for plot on OMDB API.
-var getPlot = function (movie) {
+var getPlot = function (plot) {
     apiUrl = "http://www.omdbapi.com/?t=" + movie + "&apikey=c83d4e4e&plot=full"
 
     fetch(apiUrl).then(function (response) {
