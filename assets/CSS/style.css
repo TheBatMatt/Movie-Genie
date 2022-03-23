@@ -1,16 +1,170 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-content: ["./src/**/*.{html,js}"],
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Impact, fantasy;
+}
 
-/* ..*/ Title 
+body {
+    background-color: black;
+    color: white;
+    background-image: url(../Images/459817.webp);
+    background-repeat: repeat;
+    background-size: contain;
+    height: 1700px;
+}
 
-@layer components {
-    .card {
-      background-color: theme('colors.purple');
-      border-radius: theme('borderRadius.lg');
-      padding: theme('spacing.6');
-      box-shadow: theme('boxShadow.xl');
-    }
-    /* ... */
+header{
+    background-color:#683C9D;
+    background-image: url(../Images/1.webp);
+}
+
+header h1 {
+    position: relative;
+    top: 90px;
+    font-size: 100px;
+    -webkit-text-stroke: #000000 5px;
+    color: darkorchid;
+}
+
+#movie-search {
+    margin-left: 5px;
+}
+
+#search-box {
+    display: flex;
+    font-size: larger;
+    flex-direction: column;
+    position: relative;
+    margin: 20px 0 20px 60px;
+    height: 625px;
+    width: 450px;
+    top: 100px;
+}
+
+#movie-search {
+    position: relative;
+    left: 40px;
+    height: 50px;
+    width: 80%;
+    background-color: whitesmoke;
+}
+
+#search-button {
+    position: relative;
+    left: 45px;
+    top: 15px;
+    height: 50px;
+    width: 80%;
+}
+
+#search-button:hover {
+    background-color: red;
+}
+
+#previous-search {
+    position: relative;
+    bottom: 50px;
+}
+
+#movie-stuff {
+    margin-left: 200px;
+    position: relative;
+    bottom: 625px;   
+}
+
+#syn-info h2 {
+    position: relative;
+    bottom: 100px;
+    -webkit-text-stroke: black 1px;
+    font-size: 32px;
+}
+
+#reviews-ratings {
+    display: flex;
+    margin-left: 950px;
+}
+
+#user-ratings {
+    height: 100px;
+    width: 250px;
+    background-color: blueviolet;
+}
+
+#reviews {
+    height: 100px;
+    width: 250px;
+    background-color: blueviolet;
+}
+
+#synopsis {
+    height: 600px;
+    width: 1500px;
+    margin-left: 450px;
+    margin-bottom: 200px;
+    margin-top: 25px;
+}
+
+#movie-poster {
+
+    margin-top: 20px;
+}
+
+
+.going-to-movies{
+    background-color: blueviolet;
+    position: relative;
+    bottom: 800px;
+    height: 650px;
+    width: 1500px;
+    left: 100px;
+}
+
+#movie-search{
+    font-family: "Gill Sans", sans-serif;
+    text-align: center;
+    background-image: url("../Images/movie_scroll.jpeg");
+}                  
+
+#img{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+#movie-reel{
+    float: right;
+}
+
+#neon-movie{
+    position: relative;
+    padding-bottom: -400px;
+
+}
+
+#synopsis {
+    display: flex;
+    justify-content: center;
+}
+
+#syn-info {
+    width: 800px;
+    text-align: center;
+    padding: 150px;
+}
+
+.ratings {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+}
+
+#movie-ratings h2 {
+    position: relative;
+    top: 20px;
+    font-size: 32px;
+    -webkit-text-stroke: black 1px;
+}
+
