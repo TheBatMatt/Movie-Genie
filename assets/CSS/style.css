@@ -8,6 +8,7 @@
 
 body {
     background-color: black;
+    color: white;
     background-image: url(../Images/459817.webp);
     background-position: center;
     background-repeat: repeat;
@@ -98,10 +99,12 @@ height: 500px;
 
 .going-to-movies{
     background-color: blueviolet;
-    background-position: relative;
-    bottom: 500px;
+    position: relative;
+    
+    bottom: 800px;
     height: 650px;
-    width: 550px;
+    width: 1500px;
+    left: 100px;
     margin-bottom: 550px;
 }
 
@@ -125,4 +128,3 @@ height: 500px;
     padding-bottom: -400px;
 
 }
-

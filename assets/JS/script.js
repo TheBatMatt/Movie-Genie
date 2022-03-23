@@ -102,6 +102,3 @@ var previousSelection = function (event) {
 // Event listner for submitting the search
 movieFormEl.addEventListener("submit", formSubmitHandler);
 historySearch();
-
-
-
