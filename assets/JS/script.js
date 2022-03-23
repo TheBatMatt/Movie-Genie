@@ -74,13 +74,9 @@ var getReviews = function (id) {
             // Loop to append 4 reviews to the reviews div
             for (i = 0; i < 3; i++)
              {
-                // $("#movie-ratings").append('<div class="box">' +
-                // '<input type="checkbox" id="expanded">' +
-                // '<p class="ratings"' + data.items[i].rate + ' /10 ' + data.items[i].content + '</p>' +
-                // '<label for="expanded" role="button">read more</label>' +
-                // '</div>');
-                $("#movie-ratings").append('<p class="ratings">' + data.items[i].rate + ' /10 ' + data.items[i].content + '</p>');
-                
+                if (data.items[i].content) {
+                    $("#movie-ratings").append('<p class="ratings">' + data.items[i].rate + ' /10 ' + data.items[i].content + '</p>');
+                }     
             }
         })
     })

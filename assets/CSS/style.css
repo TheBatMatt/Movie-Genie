@@ -137,3 +137,12 @@ header h1 {
     text-align: center;
     padding: 150px;
 }
+
+.ratings {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+}
+
+
