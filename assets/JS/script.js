@@ -1,5 +1,5 @@
 //var apiKey = "k_wgnnz7cy";
-var apiKey = "k_92eskhkc";
+var apiKey = "k_0frcw8k0";
 var movieFormEl = document.querySelector("#search-form");
 var moveInputEl = document.querySelector("#movie-search");
 var htmlCode = "";
@@ -48,12 +48,13 @@ var searchMovie = function (movie) {
 }
 
 //API fetch for plot on OMDB API.
-var getPlot = function (plot) {
+var getPlot = function (movie) {
     apiUrl = "http://www.omdbapi.com/?t=" + movie + "&apikey=c83d4e4e&plot=full"
 
     fetch(apiUrl).then(function (response) {
         response.json().then(function (data) {
             document.getElementById("syn-info").innerText = data.Plot;
+            console.log(movie)
         })
     })
 }
