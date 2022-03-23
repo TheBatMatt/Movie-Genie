@@ -10,17 +10,22 @@ body {
     background-color: black;
     color: white;
     background-image: url(../Images/459817.webp);
-    background-position: center;
     background-repeat: repeat;
     background-size: contain;
+    height: 1700px;
 }
 
 header{
-    background-color:#683C9D;;
+    background-color:#683C9D;
+    background-image: url(../Images/1.webp);
 }
+
 header h1 {
+    position: relative;
+    top: 90px;
     font-size: 100px;
-    margin-top: 40px;
+    -webkit-text-stroke: #000000 5px;
+    color: darkorchid;
 }
 
 #movie-search {
@@ -39,21 +44,41 @@ header h1 {
 }
 
 #movie-search {
+    position: relative;
+    left: 40px;
+    height: 50px;
+    width: 80%;
     background-color: whitesmoke;
-    margin-left: 25px;
-    margin-bottom: 10px;
 }
 
 #search-button {
-    width: 190px;
-    margin-left: 30px;
-    position: static;
+    position: relative;
+    left: 45px;
+    top: 15px;
+    height: 50px;
+    width: 80%;
+}
+
+#search-button:hover {
+    background-color: red;
+}
+
+#previous-search {
+    position: relative;
+    bottom: 50px;
 }
 
 #movie-stuff {
     margin-left: 200px;
     position: relative;
     bottom: 625px;   
+}
+
+#syn-info h2 {
+    position: relative;
+    bottom: 100px;
+    -webkit-text-stroke: black 1px;
+    font-size: 32px;
 }
 
 #reviews-ratings {
@@ -86,24 +111,14 @@ header h1 {
     margin-top: 20px;
 }
 
-#movie-info{
-   display: flex;
-   justify-content:space-evenly;
-   position: relative;
-   top: 100px;
-   bottom: 200px;
-   
-}
 
 .going-to-movies{
     background-color: blueviolet;
     position: relative;
-    
     bottom: 800px;
     height: 650px;
     width: 1500px;
     left: 100px;
-    margin-bottom: 550px;
 }
 
 #movie-search{
@@ -144,5 +159,14 @@ header h1 {
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 5;
 }
+
+#movie-ratings h2 {
+    position: relative;
+    top: 20px;
+    font-size: 32px;
+    -webkit-text-stroke: black 1px;
+}
+
+
 
 
