@@ -33,7 +33,7 @@ var searchMovie = function (movie) {
 
             // Calling the getReviews function using the id recieved from the search api
             getReviews(data.results[0].id);
-            getPlot();
+            getPlot(movie);
 
             //Local storage to get title to save.
             var previousSearch = JSON.parse(localStorage.getItem("title")) || [];
@@ -47,9 +47,9 @@ var searchMovie = function (movie) {
 
 }
 //API fetch for plot on OMDB API.
-var getPlot = function (title) {
-    apiUrl = "http://www.omdbapi.com/?t="+title+"&apikey=c83d4e4e&plot=full"
-    var title = moveInputEl.value.trim();
+var getPlot = function (movie) {
+    apiUrl = "http://www.omdbapi.com/?t="+movie+"&apikey=c83d4e4e&plot=full"
+    var movie = moveInputEl.value.trim();
 
     fetch(apiUrl).then(function (response) {
         response.json().then(function (data) {
