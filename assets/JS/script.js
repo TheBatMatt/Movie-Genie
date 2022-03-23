@@ -46,18 +46,20 @@ var searchMovie = function (movie) {
     })
 
 }
-
 //API fetch for plot on OMDB API.
-var getPlot = function (movie) {
-    apiUrl = "http://www.omdbapi.com/?t=" + movie + "&apikey=c83d4e4e&plot=full"
+var getPlot = function (title) {
+    apiUrl = "http://www.omdbapi.com/?t="+title+"&apikey=c83d4e4e&plot=full"
+    var title = moveInputEl.value.trim();
 
     fetch(apiUrl).then(function (response) {
         response.json().then(function (data) {
+            console.log(data);
             document.getElementById("syn-info").innerText = data.Plot;
-            console.log(movie)
+            console.log("plot")
+
         })
     })
-}
+};
 
 // api fetch to get reviews
 var getReviews = function (id) {
