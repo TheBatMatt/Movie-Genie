@@ -24,7 +24,7 @@ var searchMovie = function (movie) {
             var htmlCode = `
                       <h5 class="movietitle">${data.results[0].title}</h5>
                       <div class="estdate">${data.results[0].description}</div>
-                      <img src="${data.results[0].image}" width=500px>
+                      <img src="${data.results[0].image}" width=300px>
                    `
 
             // Adding html code to html index.
