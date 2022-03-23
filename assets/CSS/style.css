@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: Impact, fantasy;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body {
@@ -107,7 +107,6 @@ header h1 {
 }
 
 #movie-poster {
-
     margin-top: 20px;
 }
 
@@ -126,21 +125,6 @@ header h1 {
     text-align: center;
     background-image: url("../Images/movie_scroll.jpeg");
 }                  
-
-#img{
-    margin-top: 50px;
-    margin-bottom: 100px;
-}
-
-#movie-reel{
-    float: right;
-}
-
-#neon-movie{
-    position: relative;
-    padding-bottom: -400px;
-
-}
 
 #synopsis {
     display: flex;
