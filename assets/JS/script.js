@@ -68,14 +68,40 @@ var getReviews = function (id) {
     fetch(apiUrl).then(function (response) {
         response.json().then(function (data) {
             console.log(data);
+            getRating(data);
+            $("#movie-ratings").empty();
 
             // Loop to append 4 reviews to the reviews div
             for (i = 0; i < 3; i++)
              {
+                // $("#movie-ratings").append('<div class="box">' +
+                // '<input type="checkbox" id="expanded">' +
+                // '<p class="ratings"' + data.items[i].rate + ' /10 ' + data.items[i].content + '</p>' +
+                // '<label for="expanded" role="button">read more</label>' +
+                // '</div>');
                 $("#movie-ratings").append('<p class="ratings">' + data.items[i].rate + ' /10 ' + data.items[i].content + '</p>');
+                
             }
         })
     })
+}
+
+// Function to calculate average rating
+var getRating = function (data) {
+
+    total = 0;
+    sum = 0;
+
+    for (i = 0; i < data.items.length; i++) {
+        if(parseFloat(data.items[i].rate) >= 0) {
+            sum+=parseFloat(data.items[i].rate);
+            total++;
+        }
+    }
+    var rating = sum / total;
+    $("#user-ratings").empty();
+    $("#user-ratings").append('<h3> Average Rating </h3>'+
+        '<p>' + rating.toFixed(1) + '</p>');
 }
 
 // Local storage to tie into buttons to go to previous title selections.
@@ -105,3 +131,9 @@ var previousSelection = function (event) {
 // Event listner for submitting the search
 movieFormEl.addEventListener("submit", formSubmitHandler);
 historySearch();
+
+// Clears the default value when the search box is focused
+$("#movie-search").focus(function() {
+        moveInputEl.value = "";
+    
+})
