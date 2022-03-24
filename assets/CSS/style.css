@@ -38,10 +38,10 @@ header h1 {
     font-size: larger;
     flex-direction: column;
     position: relative;
-    margin: 20px 0 20px 60px;
     height: 625px;
     width: 450px;
     top: 100px;
+    left: 40px;
 }
 
 #movie-search {
@@ -69,12 +69,6 @@ header h1 {
     bottom: 50px;
 }
 
-#movie-stuff {
-    margin-left: 200px;
-    position: relative;
-    bottom: 625px;   
-}
-
 #syn-info h2 {
     position: relative;
     bottom: 100px;
@@ -82,29 +76,23 @@ header h1 {
     font-size: 32px;
 }
 
-#reviews-ratings {
-    display: flex;
-    margin-left: 950px;
-}
-
 #user-ratings {
-    height: 100px;
-    width: 250px;
-    background-color: blueviolet;
-}
-
-#reviews {
+    position: relative;
+    bottom: 600px;
+    left: 1120px;
     height: 100px;
     width: 250px;
     background-color: blueviolet;
 }
 
 #synopsis {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 580px;
+    left: 500px;
     height: 600px;
     width: 1500px;
-    margin-left: 450px;
-    margin-bottom: 200px;
-    margin-top: 25px;
 }
 
 #movie-poster {
@@ -112,13 +100,13 @@ header h1 {
 }
 
 
-.going-to-movies{
+#movie-ratings {
     background-color: blueviolet;
     position: relative;
-    bottom: 800px;
-    height: 650px;
-    width: 1500px;
-    left: 100px;
+    bottom: 550px;
+    height: 550px;
+    width: 1400px;
+    left: 500px;
 }
 
 #movie-search{
@@ -126,11 +114,6 @@ header h1 {
     text-align: center;
     background-image: url("../Images/movie_scroll.jpeg");
 }                  
-
-#synopsis {
-    display: flex;
-    justify-content: center;
-}
 
 #syn-info {
     width: 800px;
