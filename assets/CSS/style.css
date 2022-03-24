@@ -52,6 +52,9 @@ header h1 {
 }
 
 #movie-search {
+    font-family: "Gill Sans", sans-serif;
+    text-align: center;
+    background-image: url("../Images/movie_scroll.jpeg");
     position: relative;
     left: 40px;
     height: 50px;
@@ -78,6 +81,7 @@ header h1 {
 
 /* Synopsis Styling */
 #syn-info h2 {
+    font-family: 'Sancreek', cursive;
     position: relative;
     bottom: 100px;
     -webkit-text-stroke: black 1px;
@@ -134,19 +138,17 @@ header h1 {
 
 #movie-ratings {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     bottom: 950px;
-    height: 550px;
-    width: 1050px;
+    width: 1090px;
     left: 560px;
-}
-
-#movie-search{
-    font-family: "Gill Sans", sans-serif;
-    text-align: center;
-    background-image: url("../Images/movie_scroll.jpeg");
-}                  
+    font-size: 16px;
+}    
 
 #movie-ratings h2 {
+    font-family: 'Sancreek', cursive;
     position: relative;
     top: 230px;
     font-size: 100px;
