@@ -40,7 +40,7 @@ header h1 {
     position: relative;
     height: 625px;
     width: 450px;
-    top: 100px;
+    top: 145px;
     left: 40px;
 }
 
@@ -79,7 +79,7 @@ header h1 {
 #user-ratings {
     position: relative;
     bottom: 600px;
-    left: 1120px;
+    left: 970px;
     height: 100px;
     width: 250px;
     font-size: 32px;;
@@ -93,7 +93,7 @@ header h1 {
     bottom: 580px;
     left: 500px;
     height: 600px;
-    width: 1500px;
+    width: 1150px;
 }
 
 #syn-info h2 {
@@ -112,7 +112,7 @@ header h1 {
     position: relative;
     bottom: 550px;
     height: 550px;
-    width: 1400px;
+    width: 1150px;
     left: 500px;
 }
 
