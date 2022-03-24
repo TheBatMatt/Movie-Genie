@@ -1,5 +1,5 @@
 //var apiKey = "k_wgnnz7cy";
-var apiKey = "k_wgnnz7cy";
+var apiKey = "k_0frcw8k0";
 var movieFormEl = document.querySelector("#search-form");
 var moveInputEl = document.querySelector("#movie-search");
 var htmlCode = "";
@@ -16,39 +16,50 @@ var formSubmitHandler = function (event) {
 var searchMovie = function (movie) {
     apiUrl = "https://imdb-api.com/en/API/Search/" + apiKey + "/" + movie;
 
+
     fetch(apiUrl).then(function (response) {
         response.json().then(function (data) {
             console.log(data);
 
-            // variable to add html code dynamically with API results
-            var htmlCode = `
+            if (movie === data.results[0].title) {
+
+                // variable to add html code dynamically with API results
+                var htmlCode = `
                       <h5 class="movietitle">${data.results[0].title}</h5>
                       <div class="estdate">${data.results[0].description}</div>
                       <img src="${data.results[0].image}" width=300px>
                    `
 
-            // Adding html code to html index.
-            document.getElementById("movie-poster").innerHTML = htmlCode;
+                // Adding html code to html index.
+                document.getElementById("movie-poster").innerHTML = htmlCode;
 
 
-            // Calling the getReviews function using the id recieved from the search api
-            getReviews(data.results[0].id);
-            getPlot(movie);
+                // Calling the getReviews function using the id recieved from the search api
+                getReviews(data.results[0].id);
+                getPlot(movie);
 
-            //Local storage to get title to save.
-            var previousSearch = JSON.parse(localStorage.getItem("title")) || [];
-            if (previousSearch.indexOf(data.results[0].title) == -1) {
-                previousSearch.push(data.results[0].title);
-                localStorage.setItem("title", JSON.stringify(previousSearch));
-                historySearch()
+                //Local storage to get title to save.
+                var previousSearch = JSON.parse(localStorage.getItem("title")) || [];
+                if (previousSearch.indexOf(data.results[0].title) == -1) {
+                    previousSearch.push(data.results[0].title);
+                    localStorage.setItem("title", JSON.stringify(previousSearch));
+                    historySearch()
+                }
             }
-        })
+            else {
+                var show = document.getElementById("search-button");
+                var incorrectTitle = document.getElementById("incorrecttitlecontainer");
+            
+                show.addEventListener("click", e => incorrectTitle.style.display = "block");
+                incorrectTitle.addEventListener("click", e => incorrectTitle.style.display= "none");
+         }})
     })
-
 }
+
+
 //API fetch for plot on OMDB API.
 var getPlot = function (movie) {
-    apiUrl = "http://www.omdbapi.com/?t="+movie+"&apikey=c83d4e4e&plot=full"
+    apiUrl = "http://www.omdbapi.com/?t=" + movie + "&apikey=c83d4e4e"
     var movie = moveInputEl.value.trim();
 
     fetch(apiUrl).then(function (response) {
@@ -72,11 +83,10 @@ var getReviews = function (id) {
             $("#movie-ratings").empty();
 
             // Loop to append 4 reviews to the reviews div
-            for (i = 0; i < 3; i++)
-             {
+            for (i = 0; i < 3; i++) {
                 if (data.items[i].content) {
                     $("#movie-ratings").append('<p class="ratings">' + data.items[i].rate + ' /10 ' + data.items[i].content + '</p>');
-                }     
+                }
             }
         })
     })
@@ -89,14 +99,14 @@ var getRating = function (data) {
     sum = 0;
 
     for (i = 0; i < data.items.length; i++) {
-        if(parseFloat(data.items[i].rate) >= 0) {
-            sum+=parseFloat(data.items[i].rate);
+        if (parseFloat(data.items[i].rate) >= 0) {
+            sum += parseFloat(data.items[i].rate);
             total++;
         }
     }
     var rating = sum / total;
     $("#user-ratings").empty();
-    $("#user-ratings").append('<h3> Average Rating </h3>'+
+    $("#user-ratings").append('<h3> Average Rating </h3>' +
         '<p>' + rating.toFixed(1) + '</p>');
 }
 
@@ -129,7 +139,7 @@ movieFormEl.addEventListener("submit", formSubmitHandler);
 historySearch();
 
 // Clears the default value when the search box is focused
-$("#movie-search").focus(function() {
-        moveInputEl.value = "";
-    
+$("#movie-search").focus(function () {
+    moveInputEl.value = "";
+
 })

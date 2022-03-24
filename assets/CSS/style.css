@@ -133,7 +133,6 @@ header h1 {
 }
 
 #movie-ratings {
-    background-color: blueviolet;
     position: relative;
     bottom: 950px;
     height: 550px;
@@ -149,8 +148,7 @@ header h1 {
 
 #movie-ratings h2 {
     position: relative;
-    top: 210px;
+    top: 230px;
     font-size: 100px;
     -webkit-text-stroke: black 1px;
 }
-
