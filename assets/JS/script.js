@@ -1,5 +1,5 @@
 //var apiKey = "k_wgnnz7cy";
-var apiKey = "k_0frcw8k0";
+var apiKey = "k_wgnnz7cy";
 var movieFormEl = document.querySelector("#search-form");
 var moveInputEl = document.querySelector("#movie-search");
 var htmlCode = "";
@@ -21,8 +21,8 @@ var searchMovie = function (movie) {
         response.json().then(function (data) {
             console.log(data);
 
-            if (movie === data.results[0].title) {
-
+            //if (movie == data.results[0].title) {
+                console.log(data.results[0].title
                 // variable to add html code dynamically with API results
                 var htmlCode = `
                       <h5 class="movietitle">${data.results[0].title}</h5>
@@ -45,14 +45,17 @@ var searchMovie = function (movie) {
                     localStorage.setItem("title", JSON.stringify(previousSearch));
                     historySearch()
                 }
-            }
-            else {
-                var show = document.getElementById("search-button");
-                var incorrectTitle = document.getElementById("incorrecttitlecontainer");
-            
-                show.addEventListener("click", e => incorrectTitle.style.display = "block");
-                incorrectTitle.addEventListener("click", e => incorrectTitle.style.display= "none");
-         }})
+          //  }
+          //  else {
+            //    console.log("else")
+          //     var show = document.getElementById("search-button");
+           //    console.log(show)
+           //    var incorrectTitle = document.getElementById("incorrecttitlecontainer");
+           // 
+           //    show.addEventListener("click", e => incorrectTitle.style.display = "block");
+           //     incorrectTitle.addEventListener("click", e => incorrectTitle.style.display= "none");
+           //     console.log("display block");
+         })
     })
 }
 
