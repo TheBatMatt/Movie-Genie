@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Tailwind-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>The Movie Genie</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+  <link rel="stylesheet" href="./assets/CSS/style.css" />
+</head>
+
+<body>
+
+  <!--Header-->
+  <header class="border-4 border-purple-400 border-solid text-xl text-center h-60 w-full">
+    <h1>The Movie Genie
+    </h1>
+    <div class="undefined">Undefined - the plot. An unfortunate accident sets in motion a path of change for Nathanial Cane as he attempts to recover from substance abuse. A mentally unstable psychiatrist, DR. Henry Calhoon is tipping over the edge into a series of guilt driven hallucinations. In the background a powerful figure is manipulating them both. Intertwined in this struggle for control is a well-meaning vigilante, who falls into the mystery of the perception of good and evil. As the threads untwine the distinctions between characters and their relationships breakdown to reveal a simple human need shared by all.</div>
+  </header>
+   <!--Modal Box-->
+   <div id='incorrecttitlecontainer' class='incorrecttitlecontainer'>
+    <div id='incorrecttitle' class='incorrecttitle'>
+      <h1>Please Enter Valid Movie Title</h1>
+      <p>Click anywhere on the screen to return</p>
+    </div>
+  </div>
+
+  <!--Movie Search Box-->
+  <div id="search-box" class="bg-purple-900 border-2 border-purple-400 border-solid">
+    <form id="search-form">
+      <label for="movie-search">
+        <h3 class="text-center">Search your favorite Movies here!</h3>
+      </label>
+      <input id="movie-search" name="Movie" value="Enter Movie Title"
+        class="border-2 border-black border-solid font-bold text-lg"></input>
+      <button id="search-button" class="bg-violet-900 border-2 border-black border-solid" type="submit">Search</button>
+    </form>
+
+    
+    <br><br><br><br>
+
+    <!--Local storage Box-->
+    <div id="previous-search" class="previous-search underline text-center">Previously Searched Movies</div>
+    <ul class="list-item text-center" id="list-item">
+      <li id="previous-movie" class="previous-movie text-center">
+    </ul>
+  </div>
+  </div>
+
+  <!--/Rating-->
+  <div id="reviews-ratings">
+    <div id="user-ratings" class="text-white border-2 border-purple-400 border-solid text-center">Average Rating</div>
+  </div>
+
+  <!--Synopsis/Title/Image-->
+  <div id="synopsis" class="col-md-3 bg-purple-900 border-4 border-purple-400 border-solid justify-space-around">
+    <div id="movie-poster" class=""> </div>
+    <span id="syntatic" class="col-md-3 width=200px text-center"></span>
+    <div id="syn-info" class="width=200px">
+      <h2 class="text-white font-bold text-center underline text-xl">Synopsis
+    </div>
+  </div>
+
+    <!--Movie Reviews-->
+  <div id="movie-ratings" class="border-2 border-solid border-purple-400 text-center">
+    <h2 class="text-center underline">Movie Reviews</h2>
+  </div>
+
+
+  <!--Script containing JQuery, Moment, Touch Punch, etc-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+  <!--moment.js-->
+  <!--Tailwind-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./assets/JS/script.js"></script>
+
+</body>
+
+</html>
