@@ -1,5 +1,5 @@
 //var apiKey = "k_wgnnz7cy";
-var apiKey = "k_wgnnz7cy";
+var apiKey = "k_0frcw8k0";
 var movieFormEl = document.querySelector("#search-form");
 var moveInputEl = document.querySelector("#movie-search");
 var htmlCode = "";
@@ -47,8 +47,12 @@ var searchMovie = function (movie) {
                 }
             }
             else {
-                alert("Please enter valid title")
-         } })
+                var show = document.getElementById("search-button");
+                var incorrectTitle = document.getElementById("incorrecttitlecontainer");
+            
+                show.addEventListener("click", e => incorrectTitle.style.display = "block");
+                incorrectTitle.addEventListener("click", e => incorrectTitle.style.display= "none");
+         }})
     })
 }
 

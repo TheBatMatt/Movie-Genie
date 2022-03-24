@@ -146,3 +146,32 @@ header h1 {
     -webkit-text-stroke: black 1px;
 }
 
+.incorrecttitlecontainer
+{
+    display: none;
+    left: 0;
+    top: 0;
+    width:100%;
+    height:100%;
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    padding-top: 300px;
+    z-index: 9999;
+    
+}
+
+.incorrecttitle {
+    text-align: center;
+    color: whitesmoke;
+    background-color: #462969;
+    font-size: 3em;
+    height: 300px;
+    width: 80%;
+    margin: 50px;
+    padding: 100px;
+}
+
+.incorrecttitle p {
+    font-size: x-small;
+    font-style: italic;
+}
