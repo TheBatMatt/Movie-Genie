@@ -82,6 +82,7 @@ header h1 {
     left: 1120px;
     height: 100px;
     width: 250px;
+    font-size: 32px;;
     background-color: blueviolet;
 }
 
@@ -93,6 +94,12 @@ header h1 {
     left: 500px;
     height: 600px;
     width: 1500px;
+}
+
+#syn-info h2 {
+    font-size: 100px;
+    position: relative;
+    top: 100px;
 }
 
 #movie-poster {
@@ -130,8 +137,8 @@ header h1 {
 
 #movie-ratings h2 {
     position: relative;
-    top: 20px;
-    font-size: 32px;
+    top: 100px;
+    font-size: 100px;
     -webkit-text-stroke: black 1px;
 }
 
