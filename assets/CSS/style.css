@@ -93,6 +93,7 @@ header h1 {
     left: 500px;
     height: 600px;
     width: 1500px;
+    font-size: larger;
 }
 
 #movie-poster {
