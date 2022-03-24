@@ -93,6 +93,10 @@ header h1 {
     bottom: 580px;
     left: 500px;
     height: 600px;
+
+    width: 1500px;
+    font-size: larger;
+
     width: 1150px;
 }
 
