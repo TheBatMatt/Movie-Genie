@@ -29,6 +29,10 @@ header h1 {
     color: darkorchid;
 }
 
+.undefined {
+    display: none;
+}
+
 #movie-search {
     margin-left: 5px;
 }
