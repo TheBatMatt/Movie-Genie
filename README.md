@@ -16,7 +16,7 @@
 
 ## The Movie Genie
 
-Have you ever heard about a movie, were debating if you wanted to see it, but wanted to see more than just a rating from your typical critic? Well, we have just the application for you! Rub the lamp, and have your wish fulfilled! The Movie Genie is an application made with a lot of determination, that will alow you to search for any movie you want and see quick reviews, a user-rating and plot-outline. Super useful, right? Just type out whatever movie you want in the searc box and your set!
+Have you ever heard about a movie, were debating if you wanted to see it, but wanted to see more than just a rating from your typical critic? Well, we have just the application for you! Rub the lamp, and have your wish fulfilled! The Movie Genie is an application made with a lot of determination, that will alow you to search for any movie you want and see quick reviews, a user-rating and plot-outline. Super useful, right? Just type out whatever movie you want in the search box and your set!
 
 ## Future Plans
 
