@@ -35,8 +35,26 @@ header h1 {
     -webkit-text-stroke: #000000 5px;
 }
 
-.undefined {
+header h5 {
+    font-family: 'Sancreek', cursive;
+    color: #8416c4;
+    position: relative;
+    top: 20px;
+    right:-155px;
+    font-size: 90px;
+    -webkit-text-stroke: #000000 5px;
+}
+
+.hide {
     display: none;
+}
+  
+
+  .myDIV:hover + .hide {
+    display: block;
+    color: #7a7b75;
+    margin: 100px;
+    background-color: rgba(0,0,0,0.5);
 }
 
 
