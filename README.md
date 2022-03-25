@@ -34,5 +34,6 @@ Feel free to reach out us at:
 
 https://tedmjablonowski.github.io/Movie-Genie/
 
-![](https://files.slack.com/files-pri/T02TMKR4D5Z-F038M4B3PBL/image.png)
+![screenshot](https://user-images.githubusercontent.com/97041639/160113198-b510aeac-7f5b-49f7-ae77-c600838eed49.jpg)
+
 
