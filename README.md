@@ -29,8 +29,8 @@ Have you ever heard about a movie, were debating if you wanted to see it, but wa
 * Browse through a list of movies from one general search
 
 
-Feel free to reach out us me at:
-tedmjablonowski@gmail.com
+Feel free to reach out us at:
+* tedmjablonowski@gmail.com
 
 https://tedmjablonowski.github.io/Movie-Genie/
 
