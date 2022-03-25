@@ -1,5 +1,5 @@
 //var apiKey = "k_wgnnz7cy";
-var apiKey = "k_w5sy0sf0";
+var apiKey = "k_0frcw8k0";
 var movieFormEl = document.querySelector("#search-form");
 var moveInputEl = document.querySelector("#movie-search");
 var htmlCode = "";
@@ -21,8 +21,7 @@ var searchMovie = function (movie) {
         response.json().then(function (data) {
             console.log(data);
 
-
-            if (movie.toUpperCase() === data.results[0].title.toUpperCase()) {
+            if (movie === data.results[0].title) {
 
                 // variable to add html code dynamically with API results
                 var htmlCode = `
@@ -46,7 +45,6 @@ var searchMovie = function (movie) {
                     localStorage.setItem("title", JSON.stringify(previousSearch));
                     historySearch()
                 }
-
             }
             else {
                 var show = document.getElementById("search-button");
@@ -55,7 +53,6 @@ var searchMovie = function (movie) {
                 show.addEventListener("click", e => incorrectTitle.style.display = "block");
                 incorrectTitle.addEventListener("click", e => incorrectTitle.style.display= "none");
          }})
-
     })
 }
 
@@ -145,8 +142,4 @@ historySearch();
 $("#movie-search").focus(function () {
     moveInputEl.value = "";
 
-
 })
-
-})
-
