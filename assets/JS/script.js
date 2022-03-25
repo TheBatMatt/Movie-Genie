@@ -147,6 +147,3 @@ $("#movie-search").focus(function () {
 
 
 })
-
-})
-
