@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,19 +14,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Sancreek&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/CSS/style.css" />
 </head>
+
 <body>
 
-    <!--Header-->
-    <header class="border-4 border-purple-400 border-solid text-xl text-center h-60 w-full"> 
-        <h1>The Movie Genie </h1> 
-        <div class="undefined">Undefined - the plot. An unfortunate accident sets in motion a path of change for Nathanial Cane as he attempts to recover from substance abuse. A mentally unstable psychiatrist, DR. Henry Calhoon is tipping over the edge into a series of guilt driven hallucinations. In the background a powerful figure is manipulating them both. Intertwined in this struggle for control is a well-meaning vigilante, who falls into the mystery of the perception of good and evil. As the threads untwine the distinctions between characters and their relationships breakdown to reveal a simple human need shared by all.</div>
-    </header>
 
-       <!--Modal Box-->
+  <!--Header-->
+  <header class="border-4 border-purple-400 border-solid text-xl text-center h-60 w-full">
+    <h1>The Movie Genie
+    </h1>
+    <div class="undefined">Undefined - the plot. An unfortunate accident sets in motion a path of change for Nathanial Cane as he attempts to recover from substance abuse. A mentally unstable psychiatrist, DR. Henry Calhoon is tipping over the edge into a series of guilt driven hallucinations. In the background a powerful figure is manipulating them both. Intertwined in this struggle for control is a well-meaning vigilante, who falls into the mystery of the perception of good and evil. As the threads untwine the distinctions between characters and their relationships breakdown to reveal a simple human need shared by all.</div>
+  </header>
+  
+  
+   <!--Modal Box-->
    <div id='incorrecttitlecontainer' class='incorrecttitlecontainer'>
     <div id='incorrecttitle' class='incorrecttitle'>
       <h1>Please Enter Valid Movie Title</h1>
       <p>Click anywhere on the screen to return</p>
+
     </div>
   </div>
 
@@ -41,7 +48,7 @@
                 <li id="previous-movie" class="previous-movie text-center">
             </ul>
         </div>
-    </div>
+
 
     <!--Main Synopsis/Rating-->
         <div id="user-ratings" class="text-white border-2 border-purple-400 border-solid text-center rounded">Average Rating</div>
@@ -57,17 +64,36 @@
 
     <div id="movie-ratings" class="bg-purple-900 border-2 border-solid border-purple-400 text-center rounded">
         <h2 class="text-violet-500 font-bold text-center text-xl">Movie Reviews</h2>
+
+    <br><br><br><br>
+
+    <!--Local storage Box-->
+    <div id="previous-search" class="previous-search underline text-center">Previously Searched Movies</div>
+    <ul class="list-item text-center" id="list-item">
+      <li id="previous-movie" class="previous-movie text-center">
+    </ul>
+  </div>
+  </div>
+
+
     </div>
+  </div>
+
+    <!--Movie Reviews-->
+  <div id="movie-ratings" class="border-2 border-solid border-purple-400 text-center">
+    <h2 class="text-center underline">Movie Reviews</h2>
+  </div>
 
 
-    <!--Script containing JQuery, Moment, Touch Punch, etc-->
+  <!--Script containing JQuery, Moment, Touch Punch, etc-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
   <!--moment.js-->
   <!--Tailwind-->
- <script src="https://cdn.tailwindcss.com"></script>
- <script src="./assets/JS/script.js"></script>
-  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./assets/JS/script.js"></script>
+
 </body>
+
 </html>
