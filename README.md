@@ -10,7 +10,7 @@
 ### Contributers
 
 * Ted Jabonowski (tedmjablonowsi)
-* Alex Wiles
+* Alex Wiles (a-wiles)
 * Sergieo Lopez
 * Rashiv Richards
 
@@ -31,6 +31,7 @@ Have you ever heard about a movie, were debating if you wanted to see it, but wa
 
 Feel free to reach out us at:
 * tedmjablonowski@gmail.com
+* alexandra.wiles6@gmail.com
 
 https://tedmjablonowski.github.io/Movie-Genie/
 
