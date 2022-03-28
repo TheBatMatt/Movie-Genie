@@ -32,6 +32,7 @@ Have you ever heard about a movie, were debating if you wanted to see it, but wa
 Feel free to reach out us at:
 * tedmjablonowski@gmail.com
 * alexandra.wiles6@gmail.com
+* sergieoL23@gmail.com
 
 https://tedmjablonowski.github.io/Movie-Genie/
 
